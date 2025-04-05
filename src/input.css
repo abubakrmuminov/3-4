@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --white: #f2f2f2;
+  --orange: #E28625;
+  --blue: #006971;
+  --green: #004140;
+  --white: #ffffff;
+}
+
+@layer components {
+  .images {
+    @apply w-[64px] h-[40px] mb-[35px];
+  }
+
+  .title {
+    @apply font-semibold text-[40px] leading-[100%] text-[#f2f2f2] mb-[25px];
+  }
+
+  .text {
+    @apply text-[#FFFFFF] font-normal text-[15px] leading-[25px] opacity-75 mb-[25px] md:mb-[75px];
+  }
+
+  .button {
+    @apply px-[31.5px] py-[11.5px] font-normal text-[15px] leading-[25px] rounded-[25px] inline-block bg-[#F2F2F2];
+  }
+}
